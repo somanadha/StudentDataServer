@@ -9,9 +9,9 @@ services:
   postgres:
     image: postgres:latest
     environment:
-      POSTGRES-DB: student_data
-      POSTGRES-USER: satya
-      POSTGRES-PASSWORD: abcd1234
+      POSTGRES_DB: student_data
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: abcd1234
     networks:
       - student-data-network
     ports:
