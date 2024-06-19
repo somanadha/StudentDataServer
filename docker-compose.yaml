@@ -16,7 +16,12 @@ services:
       - student-data-network
     ports:
       - "5432:5432"
+    volumes:
+      - db-volume:/var/lib/postgresql/data
 
 networks:
   student-data-network:
+    driver: bridge
 
+volumes:
+  db-volume:
